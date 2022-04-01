@@ -14,7 +14,8 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'rodape', component: RodapeComponent},
   {path:'entrar', component: EntrarComponent},
-  {path:'cadastrar', component: CadastrarComponent}
+  {path:'cadastrar', component: CadastrarComponent},
+  {path:'home', component:HomeComponent}
 ];
 
 @NgModule({
