@@ -1,0 +1,42 @@
+.bg-home{
+    height: 100vh;
+    /* background-image: url('/assets/img/bgLiveFree.jpg'); */
+    background-image: url('C:\Users\USER\Desktop\tuxpi.com.1648821509.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.btn-entrar {
+    border: 2px solid #F14A16;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px 1rem !important;
+    transition: background-color .3s;
+}
+
+.btn-entrar:hover {
+    background-color: #F14A16;
+    color: #fff !important
+}
+
+.btn-cadastrar{
+    border: 2px solid #F14A16;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #F14A16;
+    padding: 5px 1rem !important;
+    transition: background-color .3s;
+    color: #fff !important
+}
+
+.btn-cadastrar:hover {
+    border: 2px solid #ffffff;
+    background-color: #F14A16;
+    color: #fff !important
+}
+
+.gap-home{
+     gap: 12px;
+}
