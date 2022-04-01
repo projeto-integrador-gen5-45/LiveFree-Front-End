@@ -1,0 +1,19 @@
+.bg-nav{
+    background-color: #F14A16;
+}
+
+.btn-sair {
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 5px 1rem !important;
+    transition: background-color .3s;
+    color: #fff !important
+}
+
+.btn-sair:hover {
+    background-color: #ff0000;
+}
+
+
