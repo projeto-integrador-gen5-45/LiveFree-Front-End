@@ -1,7 +1,6 @@
 .bg-home{
     height: 100vh;
-    /* background-image: url('/assets/img/bgLiveFree.jpg'); */
-    background-image: url('C:\Users\USER\Desktop\tuxpi.com.1648821509.jpg');
+    background-image: url('/assets/img/bg-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -39,4 +38,12 @@
 
 .gap-home{
      gap: 12px;
+}
+
+.divteste {
+    height: 75vh
+}
+
+.texto {
+    font-size: 1.2rem
 }
