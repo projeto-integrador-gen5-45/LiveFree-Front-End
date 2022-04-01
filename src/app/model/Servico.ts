@@ -1,3 +1,6 @@
+import { Categoria } from "./Categoria"
+import { User } from "./User"
+
 export class Servico{
 
     public id: number
@@ -7,4 +10,8 @@ export class Servico{
     public foto: string
 
     //importação/ relacionamento
+
+    public categoria: Categoria[]
+    public criador: User[] 
+
 }
