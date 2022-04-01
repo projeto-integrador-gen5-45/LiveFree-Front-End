@@ -26,14 +26,14 @@ export class EntrarComponent implements OnInit {
       next:(resp: UserLogin)=>{
       this.userLogin=resp
 
-      environment.id= this.userLogin.id;
+      
       environment.nome= this.userLogin.nome
       environment.token= this.userLogin.token
       environment.usuario= this.userLogin.usuario
       
 
       
-      this.route.navigate(['/home'])
+      this.route.navigate(['/menu'])
     }, 
     error:erro =>{
       if(erro.status==401){
