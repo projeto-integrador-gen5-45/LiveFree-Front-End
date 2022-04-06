@@ -1,6 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 import { User } from '../model/User';
 import { UserLogin } from '../model/UserLogin';
 
@@ -9,8 +10,16 @@ import { UserLogin } from '../model/UserLogin';
 })
 export class AuthService {
 
+  token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
+
+  refreshToken(){
+    this.token = { headers: new HttpHeaders().set('Authorization', environment.token)}
+  }
+  
   constructor(
-    private http: HttpClient,
+    private http: HttpClient
     
   ) { }
 
@@ -21,4 +30,15 @@ export class AuthService {
   cadastrar(user: User): Observable<User>{
     return this.http.post<User>('https://livefreegeneration.herokuapp.com/usuarios/cadastrar', user)
   }
+
+  logado(){
+    let ok: boolean = false
+
+    if(environment.token != ''){
+      ok = true
+    }
+
+    return ok
+  }
+
 }

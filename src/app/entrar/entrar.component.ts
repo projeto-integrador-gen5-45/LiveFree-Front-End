@@ -14,7 +14,7 @@ export class EntrarComponent implements OnInit {
   userLogin:UserLogin = new UserLogin
   constructor(
     private auth: AuthService,
-    private route:Router
+    private route: Router
   ) { }
 
   ngOnInit(){
@@ -26,14 +26,11 @@ export class EntrarComponent implements OnInit {
       next:(resp: UserLogin)=>{
       this.userLogin=resp
 
-      environment.id= this.userLogin.id;
+      //environment.id= this.userLogin.id
       environment.nome= this.userLogin.nome
       environment.token= this.userLogin.token
       environment.usuario= this.userLogin.usuario
-      
-
-      
-      this.route.navigate(['/home'])
+      this.route.navigate(['/plataforma'])
     }, 
     error:erro =>{
       if(erro.status==401){

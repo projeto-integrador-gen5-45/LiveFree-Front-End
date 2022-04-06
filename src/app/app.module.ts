@@ -11,6 +11,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { HomeComponent } from './home/home.component';
+import { PlataformaComponent } from './plataforma/plataforma.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     EntrarComponent,
     CadastrarComponent,
     SobreComponent,
-    HomeComponent
+    HomeComponent,
+    PlataformaComponent
   ],
   imports: [
     BrowserModule,
